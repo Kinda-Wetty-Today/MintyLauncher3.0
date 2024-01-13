@@ -1,0 +1,25 @@
+﻿<Page x:Class="MintyLauncher3._0.View.Pages.Main.Genshin_Impact"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MintyLauncher3._0.View.Pages.Main"
+      xmlns:model="clr-namespace:MintyLauncher3._0.View.Model"
+      d:DataContext="{d:DesignInstance Type=model:MainViewModel}"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="Genshin Impact">
+    <Grid>
+        <Border x:Name="Border" CornerRadius="15" Background="#292c33" BorderBrush="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid>
+                <StackPanel Width="1080" Margin="200,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="670">
+                    <Border CornerRadius="25,0,15,0"  BorderBrush="Transparent" Height="670">
+                        <Border.Background>
+                            <ImageBrush ImageSource="\View\Images\Background\GI_Background.png"/>
+                        </Border.Background>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
