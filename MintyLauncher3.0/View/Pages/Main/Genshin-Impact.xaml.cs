@@ -44,7 +44,7 @@ namespace MintyLauncher3._0.View.Pages.Main
 
             if (latestRelease == null)
             {
-                //ShowErrorDialog("Unable to fetch the latest release.");
+                new MessageBox("Unable to fetch the latest release.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 return;
             }
 

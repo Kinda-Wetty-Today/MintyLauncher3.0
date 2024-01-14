@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Input;
 using System.Windows.Media;
 
 
@@ -80,6 +81,10 @@ namespace MintyLauncher3._0
         {
             this.DialogResult = false;
             this.Close();
+        }
+        private void DragMove(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
     public enum MessageType

@@ -42,16 +42,16 @@
     <Grid>
         <Border CornerRadius="15" Background="#292c33">
             <Grid>
-
+                <Label HorizontalAlignment="Right" Height="35" VerticalAlignment="Top" Width="215" MouseDown="DragMove"/>
                 <Label x:Name="txtTitle" FontSize="20" FontWeight="Medium" Margin="10,0,196,116" Content="Error" Foreground="#9da0a9"/>
                 <TextBlock x:Name="txtMessage"  FontSize="10" Margin="10,40,10,75" Foreground="#9da0a9" Text="хуй" RenderTransformOrigin="0.5,0.5"/>
                 <!--<Button x:Name="btnOk" Click="btnOk_Click" Content="OK" ToolTip="Ok" Margin="30,105,181,10" Style="{StaticResource CustomButtonStyle}" Visibility="Hidden"/>-->
                 <Button x:Name="btnOk" Click="btnOk_Click" Content="OK" ToolTip="Ok" Margin="100,105,100,10" Style="{StaticResource CustomButtonStyle}"/>
-                <Button x:Name="btnYes" Click="btnYes_Click"  Margin="30,105,170,10" Content="Yes" ToolTip="Yes" Style="{StaticResource CustomButtonStyle}" Visibility="Hidden"/>
+                <Button x:Name="btnYes" Click="btnYes_Click"  Margin="30,105,170,10" Content="Yes" ToolTip="Yes" Style="{StaticResource CustomButtonStyle}" />
 
 
-                <Button x:Name="btnCancel" Click="btnCancel_Click"  Margin="170,105,30,10"  Content="Cancel" ToolTip="Cancel" Style="{StaticResource CustomButtonStyle}" Visibility="Hidden"/>
-                <Button x:Name="btnNo" Click="btnNo_Click"  Margin="170,105,30,10"   Content="No" ToolTip="No" Style="{StaticResource CustomButtonStyle}" Visibility="Hidden"/>
+                <Button x:Name="btnCancel" Click="btnCancel_Click"  Margin="170,105,30,10"  Content="Cancel" ToolTip="Cancel" Style="{StaticResource CustomButtonStyle}" />
+                <Button x:Name="btnNo" Click="btnNo_Click"  Margin="170,105,30,10"   Content="No" ToolTip="No" Style="{StaticResource CustomButtonStyle}" />
             </Grid>
         </Border>
     </Grid>

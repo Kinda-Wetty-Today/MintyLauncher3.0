@@ -30,7 +30,17 @@
                 </Button.Resources>
             </Button>
         </StackPanel>
-        <Image Source="/View/Images/Logos/SetingsIco.png" Stretch="Fill" Margin="10,680,1240,10"/>
+
+        <Button Margin="10,680,1240,10" Background="Transparent" BorderThickness="0" Command="{Binding OpenSE, Mode=OneWay}" >
+            <Image Source="/View/Images/Logos/SettingsIco.png" Stretch="Fill"/>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button Click="FandQ" Margin="165,680,1085,10" Background="Transparent" BorderThickness="0">
             <Image Source="/View/Images/Logos/QandA.png" />
             <Button.Template>

@@ -5,7 +5,6 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MintyLauncher3._0.View.Pages.Main" 
       xmlns:model="clr-namespace:MintyLauncher3._0.View.Model"
-      d:DataContext="{d:DesignInstance Type=model:MainViewModel}"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="1280"
       Title="Honkai_Star_Rail">
@@ -19,6 +18,20 @@
                         </Border.Background>
                     </Border>
                 </StackPanel>
+                <Button x:Name="SR_button" Content="Start" Margin="991,597,35,36" BorderBrush="Black" Background="#FFFFA600" FontSize="30" FontFamily="Comic Sans MS" Click="Launch">
+                <Button.Resources>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#3d414a"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="15"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </Grid>
         </Border>
     </Grid>
