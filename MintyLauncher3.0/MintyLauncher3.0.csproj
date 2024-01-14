@@ -6,10 +6,16 @@
     <RootNamespace>MintyLauncher3._0</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>View\Images\Background\WindowIcon.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="View\Images\Background\Hsr_Background.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="View\Images\Background\WindowIcon.ico" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />

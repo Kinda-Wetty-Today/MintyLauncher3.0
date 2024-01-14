@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MintyLauncher3._0" xmlns:vm="clr-namespace:MintyLauncher3._0.View.Model"
+         xmlns:vm="clr-namespace:MintyLauncher3._0.View.Model"
         mc:Ignorable="d"
         Title="MainWindow" 
         Height="720" 
@@ -61,6 +61,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" Width="1226" MouseDown="DragMove" Margin="0,0,54,0"/>
+        <Label HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" Width="1176" MouseDown="DragMove" Margin="0,0,54,0"/>
+        <Image Margin="5,5,1235,675" Source="/View/Images/Background/WindowIcon.ico" Stretch="Fill"/>
     </Grid>
 </Window>
