@@ -72,6 +72,6 @@
             </Button.Template>
         </Button>
         <Label HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" Width="1131" MouseDown="DragMove" Margin="0,0,100,0"/>
-        <Image  VerticalAlignment="Top"  Source="/View/Images/Logos/virus.png" Stretch="Fill" Height="45" Margin="4,5,1231,0"/>
+        <!--<Image  VerticalAlignment="Top"  Source="/View/Images/Logos/virus.png" Stretch="Fill" Height="45" Margin="4,5,1231,0"/>-->
     </Grid>
 </Window>

@@ -41,13 +41,18 @@ namespace MintyLauncher3._0
             switch (Buttons)
             {
                 case MessageButtons.OkCancel:
-                    btnYes.Visibility = Visibility.Collapsed; btnNo.Visibility = Visibility.Collapsed;
+                    btnYes.Visibility = Visibility.Collapsed; btnNo.Visibility = Visibility.Collapsed; btnOk1.Visibility = Visibility.Collapsed;
                     break;
                 case MessageButtons.YesNo:
-                    btnOk.Visibility = Visibility.Collapsed; btnCancel.Visibility = Visibility.Collapsed;
+                    btnOk.Visibility = Visibility.Collapsed; btnCancel.Visibility = Visibility.Collapsed; btnOk1.Visibility = Visibility.Collapsed;
                     break;
                 case MessageButtons.Ok:
-                    btnOk.Visibility = Visibility.Visible;
+                    btnOk.Visibility = Visibility.Visible; btnOk1.Visibility = Visibility.Collapsed;
+                    btnCancel.Visibility = Visibility.Collapsed;
+                    btnYes.Visibility = Visibility.Collapsed; btnNo.Visibility = Visibility.Collapsed;
+                    break;
+                case MessageButtons.Ok1:
+                    btnOk1.Visibility = Visibility.Visible; btnOk.Visibility = Visibility.Collapsed;
                     btnCancel.Visibility = Visibility.Collapsed;
                     btnYes.Visibility = Visibility.Collapsed; btnNo.Visibility = Visibility.Collapsed;
                     break;
@@ -100,6 +105,7 @@ namespace MintyLauncher3._0
         OkCancel,
         YesNo,
         Ok,
+        Ok1,
     }
 }
 

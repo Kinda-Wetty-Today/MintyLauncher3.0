@@ -15,17 +15,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Frame x:Name="mainFrame"  NavigationUIVisibility="Hidden" Content="{Binding CurPage}"/>
-        <Image Source="/View/Images/Logos/virus.ico" Margin="50,5,802,560" RenderTransformOrigin="0.5,0.5" >
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-
+        <!--<Image Source="/View/Images/Logos/virus.ico" Margin="50,5,802,560" />-->
         <TextBlock TextWrapping="Wrap" Text="Info-Menu"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,656,0" Foreground="#d7dee0" Height="30" Width="142" FontSize="25"/>
         <Label HorizontalAlignment="Right" Height="45" VerticalAlignment="Top" Width="558" MouseDown="DragMove" Margin="0,0,122,0">
         </Label>
