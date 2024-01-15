@@ -9,9 +9,9 @@
       Title="Develop_info">
 
     <Grid>
-        <Border Background="#292c33" CornerRadius="15" Grid.ColumnSpan="2" >
+        <Border Background="#292c33" CornerRadius="15" Grid.ColumnSpan="2" BorderBrush="#3d414a" BorderThickness="5">
             <Grid>
-                <TextBlock HorizontalAlignment="Left" Margin="203,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="502" Width="597" Foreground="#7a7f85" FontSize="30" ><Run Text="It's launcher for GI cheat &quot;Minty&quot;"/><LineBreak/><Run Text="Minty developers: hoyokprotect, moistcrafter"/><LineBreak/><Run Text="Launcher developers: bla1r_"/><LineBreak/><Run Text="Launcher publisher: sad_akulka"/><LineBreak/><Run Text="Design: bla1r_"/><LineBreak/><Run Text="Special thanks: etoshinya"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="200,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="502" Width="590" Foreground="#7a7f85" FontSize="30" ><Run Text="It's launcher for GI/SR cheat &quot;Minty&quot;"/><LineBreak/><Run Text="Minty Owner: MintyGingy"/><LineBreak/><Run Text="Minty Co-founder: moistcrafter"/><LineBreak/><Run Text="Launcher developers: bla1r_"/><LineBreak/><Run Text="Launcher publisher: sad_akulka"/><LineBreak/><Run Text="Design: bla1r_"/><LineBreak/><Run Text="Special thanks: etoshinya"/></TextBlock>
                 <TextBlock HorizontalAlignment="Left" Height="27" Margin="632,563,0,0" TextWrapping="Wrap" Text="Launcherver: 1.0" VerticalAlignment="Top" Width="158" Foreground="#7a7f85" FontSize="20"/>
             </Grid>
         </Border>
