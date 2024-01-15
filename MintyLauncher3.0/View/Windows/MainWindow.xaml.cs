@@ -23,7 +23,7 @@ namespace MintyLauncher3._0.View.Windows
 
         private void FandQ(object sender, RoutedEventArgs e)
         {
-            FaQ faqWindow = new FaQ(); 
+            QandA faqWindow = new QandA(); 
             faqWindow.Show();
         }
         private void DragMove(object sender, MouseButtonEventArgs e)

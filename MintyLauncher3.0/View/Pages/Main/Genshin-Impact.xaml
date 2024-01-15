@@ -31,6 +31,7 @@
                         </Style>
                     </Button.Resources>
                 </Button>
+                <Label Content="Genshin-Impact" HorizontalAlignment="Left" Height="48" Margin="47,0,0,0" VerticalAlignment="Top" Width="169" Foreground="#d7dee0" FontSize="20"/>
             </Grid>
         </Border>
     </Grid>

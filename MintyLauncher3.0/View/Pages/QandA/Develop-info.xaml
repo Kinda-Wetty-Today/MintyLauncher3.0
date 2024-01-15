@@ -1,0 +1,19 @@
+﻿<Page x:Class="MintyLauncher3._0.View.Pages.QandA.Develop_info"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MintyLauncher3._0.View.Pages.QandA"
+      mc:Ignorable="d" 
+      Height="600" Width="800"
+      Title="Develop_info">
+
+    <Grid>
+        <Border Background="#292c33" CornerRadius="15" Grid.ColumnSpan="2" >
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="203,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="502" Width="597" Foreground="#7a7f85" FontSize="30" ><Run Text="It's launcher for GI cheat &quot;Minty&quot;"/><LineBreak/><Run Text="Minty developers: hoyokprotect, moistcrafter"/><LineBreak/><Run Text="Launcher developers: bla1r_"/><LineBreak/><Run Text="Launcher publisher: sad_akulka"/><LineBreak/><Run Text="Design: bla1r_"/><LineBreak/><Run Text="Special thanks: etoshinya"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Height="27" Margin="632,563,0,0" TextWrapping="Wrap" Text="Launcherver: 1.0" VerticalAlignment="Top" Width="158" Foreground="#7a7f85" FontSize="20"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

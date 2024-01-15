@@ -61,7 +61,17 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" Width="1176" MouseDown="DragMove" Margin="0,0,54,0"/>
-        <Image Margin="5,5,1235,675" Source="/View/Images/Background/WindowIcon.ico" Stretch="Fill"/>
+        <Button  Height="40" VerticalAlignment="Top"  HorizontalAlignment="Right" Width="44" BorderThickness="0" Background="Transparent" FontSize="40" Click="X" Margin="0,4,5,0">
+            <Image Source="/View/Images/Logos/x.png"  />
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" Width="1131" MouseDown="DragMove" Margin="0,0,100,0"/>
+        <Image  VerticalAlignment="Top"  Source="/View/Images/Logos/virus.png" Stretch="Fill" Height="45" Margin="4,5,1231,0"/>
     </Grid>
 </Window>

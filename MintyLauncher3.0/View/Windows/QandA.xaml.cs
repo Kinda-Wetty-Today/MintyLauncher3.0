@@ -3,9 +3,9 @@ using System.Windows.Input;
 
 namespace MintyLauncher3._0.View.Windows
 {
-    public partial class FaQ : Window
+    public partial class QandA : Window
     {
-        public FaQ()
+        public QandA()
         {
             InitializeComponent();
         }

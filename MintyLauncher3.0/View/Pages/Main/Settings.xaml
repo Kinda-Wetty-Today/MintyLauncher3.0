@@ -10,6 +10,7 @@
     <Grid>
         <Border x:Name="Border" CornerRadius="15" Background="#292c33" BorderBrush="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" >
             <Grid>
+                <Label Content="Settings" HorizontalAlignment="Left" Height="48" Margin="47,0,0,0" VerticalAlignment="Top" Width="169" Foreground="#d7dee0" FontSize="20"/>
                 <Border CornerRadius="25,0,15,0"  BorderBrush="Transparent" Margin="200,50,0,0">
                     
                     <Grid>
