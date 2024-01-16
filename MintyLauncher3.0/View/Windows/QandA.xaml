@@ -19,8 +19,8 @@
         <TextBlock TextWrapping="Wrap" Text="Info-Menu"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,656,0" Foreground="#d7dee0" Height="30" Width="142" FontSize="25"/>
         <Label HorizontalAlignment="Right" Height="45" VerticalAlignment="Top" Width="558" MouseDown="DragMove" Margin="0,0,122,0">
         </Label>
-        <Button Width="35" BorderThickness="0" Background="Transparent" FontSize="20" Click="X" Margin="0,10,50,555" HorizontalAlignment="Right" VerticalAlignment="Top">
-            <Image Source="/View/Images/Logos/x.png" Height="32" Width="35" />
+        <Button Width="25" BorderThickness="0" Background="Transparent" FontSize="20" Click="X" Margin="0,10,55,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Image Source="/View/Images/Logos/x.png" Height="25" Width="25" />
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">

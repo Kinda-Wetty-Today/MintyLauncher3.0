@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows;
 using Path = System.IO.Path;
+using DiscordRPC;
+using System.Threading;
 
 namespace MintyLauncher3._0.View.Pages.Main
 {
@@ -154,6 +156,7 @@ namespace MintyLauncher3._0.View.Pages.Main
                 process.StartInfo.Verb = "runas";
                 process.EnableRaisingEvents = true;
                 process.Start();
+                Task.Run(() => CheckProcess("StarRail"));
             }
             catch (Exception ex)
             {
@@ -219,6 +222,80 @@ namespace MintyLauncher3._0.View.Pages.Main
             {
                 new MessageBox($"Error while extracting the archive: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
+        }
+        #endregion
+        #region
+        public static async Task CheckProcess(string processName)
+        {
+            try
+            {
+                while (true)
+                {
+                    var process = Process.GetProcessesByName(processName);
+                    if (process.Length == 0)
+                    {
+                        StopDiscordRPC();
+                        //new MessageBox("Process not found.", MessageType.Info, MessageButtons.Ok).ShowDialog();
+                        break;
+                    }
+                    else
+                    {
+                        //new MessageBox("Process found. Updating RPC.", MessageType.Info, MessageButtons.Ok).ShowDialog();
+                        UpdateRPC("Minty", "Hacking MHY <333");
+                    }
+                    Thread.Sleep(10000);
+                }
+            }
+            catch (Exception ex)
+            {
+                new MessageBox($"An error occurred: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
+            }
+        }
+        private static readonly DiscordRpcClient client = new DiscordRpcClient("1155013172382662677");
+
+        public static void InitializeDiscordRPC()
+        {
+            if (!client.IsInitialized)
+            {
+                client.OnReady += (sender, e) => { };
+
+                client.OnPresenceUpdate += (sender, e) => { };
+
+                client.OnError += (sender, e) => { };
+
+                client.Initialize();
+            }
+        }
+        public static void UpdateRPC(string state, string details)
+        {
+            InitializeDiscordRPC();
+
+            var presence = new RichPresence()
+            {
+                State = state,
+                Details = details,
+                Assets = new Assets()
+                {
+                    LargeImageKey = "virus",
+                    SmallImageKey = "starrail-logo",
+                    SmallImageText = "Honkai Star Rail"
+                },
+                Buttons = new DiscordRPC.Button[]
+                {
+            new DiscordRPC.Button()
+            {
+                Label = "Join",
+                Url = "https://discord.gg/kindawindytoday"
+            }
+                }
+            };
+
+            client.SetPresence(presence);
+        }
+        static void StopDiscordRPC()
+        {
+            client.ClearPresence();
+            client.Deinitialize();
         }
         #endregion
         #endregion

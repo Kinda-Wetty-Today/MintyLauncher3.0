@@ -8,7 +8,7 @@
       d:DesignHeight="720" d:DesignWidth="1280"
       Title="Genshin Impact">
     <Grid>
-        <Border x:Name="Border" CornerRadius="15" Background="#292c33" BorderBrush="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" >
+        <Border x:Name="Border" CornerRadius="15" Background="#292c33"  Grid.ColumnSpan="2" Grid.RowSpan="2" BorderBrush="#3d414a" BorderThickness="5">
             <Grid>
                 <Label Content="Settings" HorizontalAlignment="Left" Height="48" Margin="47,0,0,0" VerticalAlignment="Top" Width="169" Foreground="#d7dee0" FontSize="20"/>
                 <Border CornerRadius="25,0,15,0"  BorderBrush="Transparent" Margin="200,50,0,0">

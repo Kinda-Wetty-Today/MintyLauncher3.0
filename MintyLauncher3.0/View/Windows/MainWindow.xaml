@@ -51,18 +51,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button  Height="40" VerticalAlignment="Top"  HorizontalAlignment="Right" Width="44" BorderThickness="0" Background="Transparent" FontSize="40" Click="X" Margin="0,4,5,0">
-            <Image Source="/View/Images/Logos/x.png"  />
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button  Height="40" VerticalAlignment="Top"  HorizontalAlignment="Right" Width="44" BorderThickness="0" Background="Transparent" FontSize="40" Click="X" Margin="0,4,5,0">
-            <Image Source="/View/Images/Logos/x.png"  />
+        <Button  Height="36" VerticalAlignment="Top"  HorizontalAlignment="Right" Width="39" BorderThickness="0" Background="Transparent" FontSize="40" Click="X" Margin="0,10,10,0">
+            <Image Source="/View/Images/Logos/x.png" Height="35"  />
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">

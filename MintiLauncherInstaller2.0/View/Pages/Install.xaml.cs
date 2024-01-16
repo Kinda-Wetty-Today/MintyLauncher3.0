@@ -18,7 +18,7 @@
             if (token == 1) { accessToken = "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"; }
             else if (token == 2) { accessToken = "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"; }
             string owner = "Kinda-Wetty-Today";
-            string repositoryName = "Minty-Launcher-Releases";
+            string repositoryName = "Minty-Launcher3.0-Releases";
             var client = new GitHubClient(new Octokit.ProductHeaderValue("Launcher"));
             var tokenAuth = new Credentials(accessToken);
             client.Credentials = tokenAuth;

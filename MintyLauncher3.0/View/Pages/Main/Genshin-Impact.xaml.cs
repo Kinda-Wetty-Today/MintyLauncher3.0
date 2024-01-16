@@ -12,6 +12,8 @@ using Octokit;
 using DiscordRPC;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
+using System.Threading;
+using System.Net.Sockets;
 
 namespace MintyLauncher3._0.View.Pages.Main
 {
@@ -152,13 +154,13 @@ namespace MintyLauncher3._0.View.Pages.Main
             try
             {
                 GI_button.IsEnabled = true;
-                UpdateRPC("Minty", "Hacking MHY <333");
                 Process process = new Process();
                 process.StartInfo.FileName = exePath;
                 process.StartInfo.UseShellExecute = true;
                 process.StartInfo.Verb = "runas";
                 process.EnableRaisingEvents = true;
                 process.Start();
+                Task.Run(() => CheckProcess("GenshinImpact"));
             }
             catch (Exception ex)
             {
@@ -228,6 +230,32 @@ namespace MintyLauncher3._0.View.Pages.Main
         #endregion
         //Rcp
         #region
+        public static async Task CheckProcess(string processName)
+        {
+            try
+            {
+                while (true)
+                {
+                    var process = Process.GetProcessesByName(processName);
+                    if (process.Length == 0)
+                    {
+                        StopDiscordRPC();
+                        //new MessageBox("Process not found.", MessageType.Info, MessageButtons.Ok).ShowDialog();
+                        break;
+                    }
+                    else
+                    {
+                        //new MessageBox("Process found. Updating RPC.", MessageType.Info, MessageButtons.Ok).ShowDialog();
+                        UpdateRPC("Minty", "Hacking MHY <333");
+                    }
+                    Thread.Sleep(10000);
+                }
+            }
+            catch (Exception ex)
+            {
+                new MessageBox($"An error occurred: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
+            }
+        }
         private static readonly DiscordRpcClient client = new DiscordRpcClient("1112360491847778344");
 
         public static void InitializeDiscordRPC()
@@ -243,7 +271,6 @@ namespace MintyLauncher3._0.View.Pages.Main
                 client.Initialize();
             }
         }
-
         public static void UpdateRPC(string state, string details)
         {
             InitializeDiscordRPC();
@@ -269,6 +296,11 @@ namespace MintyLauncher3._0.View.Pages.Main
             };
 
             client.SetPresence(presence);
+        }
+        static void StopDiscordRPC()
+        {
+            client.ClearPresence();
+            client.Deinitialize();
         }
         #endregion
         #endregion

@@ -8,7 +8,7 @@
       d:DesignHeight="720" d:DesignWidth="1280"
       Title="Genshin Impact">
     <Grid>
-        <Border x:Name="Border" CornerRadius="15" Background="#292c33" BorderBrush="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <Border x:Name="Border" CornerRadius="15" Background="#292c33"  Grid.ColumnSpan="2" Grid.RowSpan="2" BorderBrush="#3d414a" BorderThickness="5">
             <Grid>
                 <StackPanel Width="1080" Margin="200,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="670">
                     <Border CornerRadius="25,0,15,0"  BorderBrush="Transparent" Height="670">
@@ -17,7 +17,7 @@
                         </Border.Background>
                     </Border>
                 </StackPanel>
-                <Button x:Name="GI_button" Content="Start" Margin="991,597,35,36" BorderBrush="Black" Background="#FFFFA600" FontSize="30" FontFamily="Comic Sans MS" Click="Launch">
+                <Button x:Name="GI_button" Content="Start" Margin="991,597,35,36" BorderBrush="#3d414a" BorderThickness="4" Background="#292c33" Foreground="#7a7f85" FontSize="30" FontFamily="Comic Sans MS" Click="Launch">
                     <Button.Resources>
                         <Style TargetType="Button">
                             <Style.Triggers>
@@ -27,7 +27,7 @@
                             </Style.Triggers>
                         </Style>
                         <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="15"/>
+                            <Setter Property="CornerRadius" Value="12"/>
                         </Style>
                     </Button.Resources>
                 </Button>
