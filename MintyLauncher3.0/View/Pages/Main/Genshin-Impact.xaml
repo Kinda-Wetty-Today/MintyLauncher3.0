@@ -17,7 +17,7 @@
                         </Border.Background>
                     </Border>
                 </StackPanel>
-                <Button x:Name="GI_button" Content="Start" Margin="991,597,35,36" BorderBrush="#3d414a" BorderThickness="4" Background="#292c33" Foreground="#7a7f85" FontSize="30" FontFamily="Comic Sans MS" Click="Launch">
+                <Button x:Name="GI_button" Content="Start" Margin="991,597,35,36" BorderBrush="Black" Background="#FFFFA600" FontSize="30" FontFamily="Comic Sans MS" Click="Launch">
                     <Button.Resources>
                         <Style TargetType="Button">
                             <Style.Triggers>

@@ -232,6 +232,7 @@ namespace MintyLauncher3._0.View.Pages.Main
         #region
         public static async Task CheckProcess(string processName)
         {
+            await Task.Delay(20000);
             try
             {
                 while (true)
@@ -279,6 +280,7 @@ namespace MintyLauncher3._0.View.Pages.Main
             {
                 State = state,
                 Details = details,
+                Timestamps = Timestamps.Now,
                 Assets = new Assets()
                 {
                     LargeImageKey = "idol",
