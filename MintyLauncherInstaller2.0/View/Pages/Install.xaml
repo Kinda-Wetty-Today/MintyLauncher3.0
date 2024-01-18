@@ -8,8 +8,8 @@
       Title="Install"
       Background="Transparent">
     <Grid>
-        <Border CornerRadius="20" Background="#292c33" BorderBrush="Transparent">
-            <Border CornerRadius="20,20,20,20">
+        <Border CornerRadius="20" Background="#292c33">
+            <Border CornerRadius="20,20,20,20" BorderBrush="#3d414a" BorderThickness="5">
                 <Border.Background>
                     <ImageBrush ImageSource="/View/Images/StartupBackground.png"/>
                 </Border.Background>

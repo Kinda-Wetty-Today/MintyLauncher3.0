@@ -42,9 +42,9 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "bin\Debug\net7.0-windows\MintiLauncherInstaller2.0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Debug\net7.0-windows\MintiLauncherInstaller2.0.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Debug\net7.0-windows\MintiLauncherInstaller2.0.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\Release\net7.0-windows\MintiLauncherInstaller2.0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\Release\net7.0-windows\MintiLauncherInstaller2.0.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\Release\net7.0-windows\MintiLauncherInstaller2.0.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{#MyAppSetupName}"; Filename: "{app}\{#MyAppExeName}"

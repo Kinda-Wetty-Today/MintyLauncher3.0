@@ -28,7 +28,7 @@
             var releases = await client.Repository.Release.GetAll(owner, repositoryName);
             Release? latestRelease = releases[0];
             string MainFolderPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
-            string LauncherFolderPath = System.IO.Path.Combine(MainFolderPath, "Launcher");
+            string LauncherFolderPath = System.IO.Path.Combine(MainFolderPath, "Launcher3.0");
             string LauncherFilePath = System.IO.Path.Combine(LauncherFolderPath, "MintyLauncher3.0.exe");
             string LauncherZipFilePath = System.IO.Path.Combine(LauncherFolderPath, "Launcher.zip");
             string verFilePath = Path.Combine(LauncherFolderPath, "LauncherVer");
