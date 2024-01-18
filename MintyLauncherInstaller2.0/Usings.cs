@@ -10,4 +10,6 @@ global using System;
 global using System.IO.Compression;
 global using Octokit;
 global using Page = System.Windows.Controls.Page;
+global using System.Windows.Media;
+global using MintyLauncherInstaller2._0.View.Pages;
 

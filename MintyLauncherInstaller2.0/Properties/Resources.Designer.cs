@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MintiLauncherInstaller2._0.Properties {
+namespace MintyLauncherInstaller2._0.Properties {
     using System;
     
     

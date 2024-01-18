@@ -3,11 +3,22 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net7.0-windows</TargetFramework>
-    <RootNamespace>MintiLauncherInstaller2._0</RootNamespace>
+    <RootNamespace>MintyLauncherInstaller2._0</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>WindowIcon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <SignAssembly>False</SignAssembly>
+    <PackAsTool>False</PackAsTool>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,5 +40,17 @@
 	
 	<ItemGroup>
 		<Resource Include="View\Images\StartupBackground.png" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Compile Update="MessageBox.xaml.cs">
+	    <SubType>Code</SubType>
+	  </Compile>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Page Update="MessageBox.xaml">
+	    <SubType>Designer</SubType>
+	  </Page>
 	</ItemGroup>
 </Project>

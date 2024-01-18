@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="View\Images\Background\Hsr_Background.png" />
     <Resource Include="View\Images\Logos\virus.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -26,7 +27,6 @@
 
   <ItemGroup>
     <Resource Include="View\Images\Background\Gi_Background.png" />
-    <Resource Include="View\Images\Background\Hsr_Background.png" />
     <Resource Include="View\Images\Logos\GI_Logo.png" />
     <Resource Include="View\Images\Logos\QandA.png" />
     <Resource Include="View\Images\Logos\SettingsIco.png" />

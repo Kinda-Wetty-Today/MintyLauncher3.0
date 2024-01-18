@@ -1,16 +1,14 @@
-﻿namespace MintiLauncherInstaller2._0.View.Pages
+﻿namespace MintyLauncherInstaller2._0.View.Pages
 {
-    public partial class Update : Page
+    public partial class Install : Page
     {
-        public Update()
+        public Install()
         {
             InitializeComponent();
         }
-        //Metods
+        //Launch
         #region
-        //Update Click
-        #region
-        private async void Update_Click(object sender, RoutedEventArgs e)
+        private async void Install_Click(object sender, RoutedEventArgs e)
         {
             Button.IsEnabled = false;
             Button.Content = "Downloading";
@@ -35,18 +33,16 @@
 
             if (latestRelease == null)
             {
-                MessageBox.Show("Unable to fetch the latest release.");
+                new MessageBox("Unable to fetch the latest release.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 return;
             }
             string latestReleaseTag = latestRelease.TagName;
 
             if (latestRelease.Assets.Count == 0)
             {
-                MessageBox.Show("Minty.zip not found. The file name may not match.");
+                new MessageBox("Minty.zip not found. The file name may not match.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 return;
             }
-            Directory.Delete(LauncherFolderPath, true);
-            Directory.CreateDirectory(LauncherFolderPath);
             var asset = latestRelease.Assets[0];
             string downloadUrl = asset.BrowserDownloadUrl;
             Directory.CreateDirectory(LauncherFolderPath);
@@ -54,6 +50,7 @@
             {
                 await writer.WriteLineAsync(latestReleaseTag);
             }
+
             bool downloadSuccess = await DownloadFilesAsync(downloadUrl, LauncherZipFilePath, LauncherFolderPath);
             using (StreamWriter writer = new StreamWriter(verFilePath))
             {
@@ -61,18 +58,14 @@
             }
             if (downloadSuccess)
             {
-                MessageBox.Show($"Minty updated to version: {await File.ReadAllTextAsync(verFilePath)}");
                 LaunchExecutable(LauncherFilePath);
                 Environment.Exit(0);
             }
             else
             {
-                MessageBox.Show("Failed to download Minty.zip.");
+                new MessageBox("Failed to download Minty.zip.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
-        #endregion
-        //Launch
-        #region
         private void LaunchExecutable(string exePath)
         {
             try
@@ -81,7 +74,7 @@
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error launching executable: {ex.Message}");
+                new MessageBox($"Error launching executable: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
         #endregion
@@ -115,15 +108,15 @@
             }
             catch (HttpRequestException ex)
             {
-                MessageBox.Show($"Error downloading file: {ex.Message}");
+                new MessageBox($"Error downloading file: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
             catch (IOException ex)
             {
-                MessageBox.Show($"Error saving file: {ex.Message}");
+                new MessageBox($"Error saving file: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An unexpected error occurred: {ex.Message}");
+                new MessageBox($"An unexpected error occurred: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
 
             return false;
@@ -141,10 +134,10 @@
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error while extracting the archive: {ex.Message}");
+                new MessageBox($"Error while extracting the archive: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
         #endregion
-        #endregion
     }
 }
+

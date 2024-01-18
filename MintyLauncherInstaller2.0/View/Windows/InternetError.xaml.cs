@@ -1,4 +1,4 @@
-﻿namespace MintiLauncherInstaller2._0.View.Windows
+﻿namespace MintyLauncherInstaller2._0.View.Windows
 {
     public partial class InternetError : Window
     {
@@ -16,7 +16,7 @@
             }
             else
             {
-                MessageBox.Show("Internet is still not available. Please check your connection.");
+                new MessageBox("Internet is still not available. Please check your connection.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
         public static bool IsInternetAvailable()

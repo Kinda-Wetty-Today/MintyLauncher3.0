@@ -1,7 +1,4 @@
-﻿using MintiLauncherInstaller2._0.View.Pages;
-using System.Windows.Navigation;
-
-namespace MintiLauncherInstaller2._0.View.Windows
+﻿namespace MintyLauncherInstaller2._0.View.Windows
 {
     public partial class StartUpWindow : Window
     {
@@ -73,14 +70,14 @@ namespace MintiLauncherInstaller2._0.View.Windows
 
             if (latestRelease == null)
             {
-                MessageBox.Show("Unable to fetch the latest release.");
+                new MessageBox("Unable to fetch the latest release.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
 
             if (latestRelease.Assets.Count == 0)
             {
-                MessageBox.Show("Minty.zip not found. The file name may not match.");
+                new MessageBox("Minty.zip not found. The file name may not match.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 return;
             }
             if (!File.Exists(verFilePath))
@@ -94,7 +91,7 @@ namespace MintiLauncherInstaller2._0.View.Windows
 
                 if (!Version.TryParse(verText, out localVersion))
                 {
-                    MessageBox.Show($"Incorrect version format in local file: {verText}");
+                    new MessageBox($"Incorrect version format in local file: {verText}", MessageType.Error, MessageButtons.Ok).ShowDialog();
                     return;
                 }
 
@@ -103,7 +100,7 @@ namespace MintiLauncherInstaller2._0.View.Windows
 
                 if (!Version.TryParse(githubVersionTag, out githubVersion))
                 {
-                    MessageBox.Show($"Incorrect version format on GitHub: {githubVersionTag}");
+                    new MessageBox($"Incorrect version format on GitHub: {githubVersionTag}", MessageType.Error, MessageButtons.Ok).ShowDialog();
                     return;
                 }
 
@@ -116,7 +113,7 @@ namespace MintiLauncherInstaller2._0.View.Windows
 
                 if (latestRelease.Assets.Count == 0)
                 {
-                    MessageBox.Show("Minty.zip not found. The file name may not match.");
+                    new MessageBox("Minty.zip not found. The file name may not match.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                     return;
                 }
                 mainFrame.Navigate(new Update());
@@ -133,7 +130,7 @@ namespace MintiLauncherInstaller2._0.View.Windows
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error launching executable: {ex.Message}");
+                new MessageBox($"Error launching executable: {ex.Message}", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
         #endregion

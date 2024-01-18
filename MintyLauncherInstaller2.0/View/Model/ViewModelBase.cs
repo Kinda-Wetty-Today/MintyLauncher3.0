@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace MintiLauncherInstaller2._0.View.Model
+namespace MintyLauncherInstaller2._0.View.Model
 {
     internal abstract class ViewModelBase : INotifyPropertyChanged
     {
