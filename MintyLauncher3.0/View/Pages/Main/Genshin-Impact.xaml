@@ -13,7 +13,7 @@
                 <StackPanel Width="1080" Margin="200,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="670">
                     <Border CornerRadius="25,0,15,0"  BorderBrush="Transparent" Height="670">
                         <Border.Background>
-                            <ImageBrush ImageSource="\View\Images\Background\GI_Background.png"/>
+                            <ImageBrush ImageSource="\Images\Background\GI_Background.png"/>
                         </Border.Background>
                     </Border>
                 </StackPanel>

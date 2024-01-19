@@ -14,10 +14,10 @@
                 <Border CornerRadius="25,0,15,0"  BorderBrush="Transparent" Margin="200,50,0,0">
                     
                     <Grid>
-                        <!--<Label Content="Change GI-Background" HorizontalAlignment="Left" Height="49" Margin="20,10,0,0" VerticalAlignment="Top" Width="320" Foreground="#9da0a9" FontSize="30"/>
+                        <Label Content="Change GI-Background" HorizontalAlignment="Left" Height="49" Margin="20,10,0,0" VerticalAlignment="Top" Width="320" Foreground="#9da0a9" FontSize="30"/>
                         <Button Content="Select File" Click="SelectFileAndMoveGI_Background" Background="#3d414a" Foreground="#9da0a9" Margin="358,17,571,611" FontSize="20"/>
                         <Label Content="Change HSR-Background" HorizontalAlignment="Left" Height="49" Margin="20,59,0,0" VerticalAlignment="Top" Width="320" Foreground="#9da0a9" FontSize="30"/>
-                        <Button Content="Select File" Click="SelectFileAndMoveHsr_Background" Background="#3d414a" Foreground="#9da0a9" Margin="358,67,571,561" FontSize="20"/>-->
+                        <Button Content="Select File" Click="SelectFileAndMoveHsr_Background" Background="#3d414a" Foreground="#9da0a9" Margin="358,67,571,561" FontSize="20"/>
                         <Button Content="Delete GI" Click="DeleteGI" Background="#3d414a" Foreground="#9da0a9" Margin="10,10,905,612" FontSize="20">
                             <Button.Resources>
                                 <Style TargetType="Button">

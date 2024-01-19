@@ -6,33 +6,27 @@
     <RootNamespace>MintyLauncher3._0</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>View\Images\Logos\virus.ico</ApplicationIcon>
+    <ApplicationIcon>Images\Logos\virus.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="View\Images\Background\Hsr_Background.png" />
-    <None Remove="View\Images\Logos\virus.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="View\Images\Background\Hsr_Background.png" />
-    <Resource Include="View\Images\Logos\virus.ico" />
+	<ItemGroup>
+		<PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
+		<PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+		<PackageReference Include="Octokit" Version="9.1.0" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
-    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
-    <PackageReference Include="Octokit" Version="9.1.0" />
+	<Resource Include="Images\Logos\virus.ico" />
+    <Resource Include="Images\Logos\GI_Logo.png" />
+    <Resource Include="Images\Logos\QandA.png" />
+    <Resource Include="Images\Logos\SettingsIco.png" />
+    <Resource Include="Images\Logos\Sr_Logo.png" />
+    <Resource Include="Images\Logos\virus.png" />
+    <Resource Include="Images\Logos\X.png" />
+	  <Resource Include="Images\Background\Hsr_Background.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Images\Background\Gi_Background.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
   </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="View\Images\Background\Gi_Background.png" />
-    <Resource Include="View\Images\Logos\GI_Logo.png" />
-    <Resource Include="View\Images\Logos\QandA.png" />
-    <Resource Include="View\Images\Logos\SettingsIco.png" />
-    <Resource Include="View\Images\Logos\Sr_Logo.png" />
-    <Resource Include="View\Images\Logos\virus.png" />
-    <Resource Include="View\Images\Logos\X.png" />
-  </ItemGroup>
-
 </Project>

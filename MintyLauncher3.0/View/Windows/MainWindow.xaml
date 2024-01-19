@@ -21,18 +21,18 @@
         <StackPanel Width="200" HorizontalAlignment="Left" Margin="0,50,0,40">
             <Button Content="Genshin Impact" Foreground="#7a7f85" FontSize="50" Width="200" Height="55" HorizontalAlignment="Left" Template="{StaticResource ResourceKey=SlideMenuBtn}" Command="{Binding OpenGI, Mode=OneWay}">
                 <Button.Resources>
-                    <ImageSource x:Key="Img">\View\Images\Logos\GI_Logo.png</ImageSource>
+                    <ImageSource x:Key="Img">\Images\Logos\GI_Logo.png</ImageSource>
                 </Button.Resources>
             </Button>
             <Button Content="Honkai:Star Rail" Foreground="#7a7f85" FontSize="50" Width="200" Height="54" HorizontalAlignment="Left" Template="{StaticResource ResourceKey=SlideMenuBtn}" Command="{Binding OpenHsr, Mode=OneWay}">
                 <Button.Resources>
-                    <ImageSource x:Key="Img">\View\Images\Logos\Sr_Logo.png</ImageSource>
+                    <ImageSource x:Key="Img">\Images\Logos\Sr_Logo.png</ImageSource>
                 </Button.Resources>
             </Button>
         </StackPanel>
 
         <Button Margin="10,680,1240,10" Background="Transparent" BorderThickness="0" Command="{Binding OpenSE, Mode=OneWay}" >
-            <Image Source="/View/Images/Logos/SettingsIco.png" Stretch="Fill"/>
+            <Image Source="/Images/Logos/SettingsIco.png" Stretch="Fill"/>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
@@ -42,7 +42,7 @@
             </Button.Template>
         </Button>
         <Button Click="FandQ" Margin="165,680,1085,10" Background="Transparent" BorderThickness="0">
-            <Image Source="/View/Images/Logos/QandA.png" />
+            <Image Source="/Images/Logos/QandA.png" />
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
@@ -52,7 +52,7 @@
             </Button.Template>
         </Button>
         <Button  Height="36" VerticalAlignment="Top"  HorizontalAlignment="Right" Width="39" BorderThickness="0" Background="Transparent" FontSize="40" Click="X" Margin="0,10,10,0">
-            <Image Source="/View/Images/Logos/x.png" Height="35"  />
+            <Image Source="/Images/Logos/x.png" Height="35"  />
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">

@@ -11,7 +11,7 @@
 #define MyAppSetupName "Minty"
 #define MyAppVersion "0.1"
 #define MyAppPublisher "KW Team"
-#define MyAppExeName "MintiLauncherInstaller2.0.exe"
+#define MyAppExeName "MintyLauncherInstaller2.0.exe"
 
 AppName={#MyAppSetupName}
 AppVersion={#MyAppVersion}
@@ -21,7 +21,7 @@ VersionInfoCompany={#MyAppPublisher}
 AppPublisher={#MyAppPublisher}
 DefaultGroupName={#MyAppSetupName}
 DefaultDirName={autopf}\{#MyAppSetupName}
-UninstallDisplayIcon={app}\MintiLauncherInstaller2.0.exe
+UninstallDisplayIcon={app}\MintyLauncherInstaller2.0.exe
 AllowNoIcons=yes
 OutputDir=C:\Users\Blair\Desktop\Mintlauncherinstaller
 OutputBaseFilename=Minty
@@ -42,9 +42,9 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "bin\Release\net7.0-windows\MintiLauncherInstaller2.0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Release\net7.0-windows\MintiLauncherInstaller2.0.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Release\net7.0-windows\MintiLauncherInstaller2.0.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\Release\net7.0-windows\MintyLauncherInstaller2.0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\Release\net7.0-windows\MintyLauncherInstaller2.0.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\Release\net7.0-windows\MintyLauncherInstaller2.0.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{#MyAppSetupName}"; Filename: "{app}\{#MyAppExeName}"

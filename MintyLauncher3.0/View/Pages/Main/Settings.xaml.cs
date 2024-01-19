@@ -67,9 +67,8 @@ namespace MintyLauncher3._0.View.Pages.Main
                 if (!string.IsNullOrEmpty(newFileName))
                 {
                     string MainFolderPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
-                    string Images1FolderPath = System.IO.Path.Combine(MainFolderPath, "View");
-                    string Images2FolderPath = System.IO.Path.Combine(Images1FolderPath, "Images");
-                    string destinationFolderPath = System.IO.Path.Combine(Images2FolderPath, "Background");
+                    string ImagesFolderPath = System.IO.Path.Combine(MainFolderPath, "Images");
+                    string destinationFolderPath = System.IO.Path.Combine(ImagesFolderPath, "Background");
                     string newFilePath = System.IO.Path.Combine(destinationFolderPath, newFileName);
                     Directory.CreateDirectory(destinationFolderPath);
                     try
@@ -101,9 +100,8 @@ namespace MintyLauncher3._0.View.Pages.Main
                 if (!string.IsNullOrEmpty(newFileName))
                 {
                     string MainFolderPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
-                    string Images1FolderPath = System.IO.Path.Combine(MainFolderPath, "View");
-                    string Images2FolderPath = System.IO.Path.Combine(Images1FolderPath, "Images");
-                    string destinationFolderPath = System.IO.Path.Combine(Images2FolderPath, "Background");
+                    string ImagesFolderPath = System.IO.Path.Combine(MainFolderPath, "Images");
+                    string destinationFolderPath = System.IO.Path.Combine(ImagesFolderPath, "Background");
                     string newFilePath = System.IO.Path.Combine(destinationFolderPath, newFileName);
                     Directory.CreateDirectory(destinationFolderPath);
                     try
